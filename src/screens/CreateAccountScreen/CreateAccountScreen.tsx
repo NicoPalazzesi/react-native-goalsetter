@@ -3,9 +3,10 @@ import ScreenContainer from '../../components/ScreenContainer';
 import Header from './components/Header';
 import Form from './components/Form';
 import Button from '../../components/Button';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { Account } from './model/interface';
 import { useAddParent } from './hooks/useAddParent';
+import TermsOfServiceNote from './components/TermsOfServiceNote';
 
 const CreateAccountScreen = () => {
   const [account, setAccount] = useState<Account>();
@@ -19,24 +20,28 @@ const CreateAccountScreen = () => {
   }
 
   return (
-    <ScreenContainer loading={loading} style={styles.container}>
-      <View>
-        <Header />
+    <ScreenContainer loading={loading}>
+      <Header />
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.contentContainer}
+      >
         <Form onFieldsChange={onFieldsChange} />
-      </View>
-      <Button
-        label={'CREATE FREE ACCOUNT'}
-        onPress={() => addParent(account as Account)}
-        style={styles.button}
-        disabled={disabled}
-      />
+        <TermsOfServiceNote />
+        <Button
+          label={'CREATE FREE ACCOUNT'}
+          onPress={() => addParent(account as Account)}
+          style={styles.button}
+          disabled={disabled}
+        />
+      </ScrollView>
     </ScreenContainer>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'space-between',
+  contentContainer: {
+    flexGrow: 1,
   },
   button: {
     marginHorizontal: 60,

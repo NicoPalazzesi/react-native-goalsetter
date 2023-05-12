@@ -78,6 +78,7 @@ const Form = ({onFieldsChange}: FormProps) => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     marginTop: 38,
     paddingHorizontal: 38,
   },
