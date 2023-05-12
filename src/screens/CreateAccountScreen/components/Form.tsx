@@ -1,17 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import TextInput from '../../../components/TextInput';
 import { useValidateEmail } from '../hooks/useValidateEmail';
 import { useValidatePassword } from '../hooks/useValidatePassword';
+import { Account } from '../model/interface';
 
-const Form = () => {
+interface FormProps {
+  onFieldsChange: (complete: boolean, fields: Account) => void;
+};
+
+const Form = ({onFieldsChange}: FormProps) => {
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const {invalidEmail, validateEmail} = useValidateEmail(email);
-  const {invalidPassword, validatePassword} = useValidatePassword(password);
+  const {invalidEmail, validateEmail} = useValidateEmail();
+  const {invalidPassword, validatePassword} = useValidatePassword();
+
+  const onChangeEmail = (value: string) =>{
+    validateEmail(value);
+    setEmail(value);
+  };
+
+  const onChangePassword = (value: string) =>{
+    validatePassword(value);
+    setPassword(value);
+  };
+
+  useEffect(() => {
+    const completed = firstname !== '' &&
+    lastname !== '' &&
+    !invalidEmail &&
+    !invalidPassword;
+    onFieldsChange(completed, {firstname, lastname, email, password});
+  }, [firstname, lastname, invalidEmail, invalidPassword]);
 
   return (
     <View style={styles.container}>
@@ -34,21 +57,19 @@ const Form = () => {
       <TextInput
         placeholder={'Email Address'}
         value={email}
-        onChangeText={(value) => setEmail(value)}
+        onChangeText={onChangeEmail}
         iconUri={require('../../../assets/images/email-icon.png')}
         keyboardType={'email-address'}
         error={invalidEmail}
-        onBlur={validateEmail}
         style={styles.textInput}
       />
       <TextInput
         placeholder={'Password'}
         value={password}
-        onChangeText={(value) => setPassword(value)}
+        onChangeText={onChangePassword}
         iconUri={require('../../../assets/images/unlocked-icon.png')}
         secureTextEntry={true}
         error={invalidPassword}
-        onBlur={validatePassword}
         style={styles.textInput}
       />
     </View>

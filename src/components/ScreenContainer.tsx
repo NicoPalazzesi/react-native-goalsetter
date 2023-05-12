@@ -8,15 +8,18 @@ import {
   ViewStyle
 } from 'react-native';
 import Colors from '../constants/Colors';
+import Loader from '../screens/CreateAccountScreen/components/Loader';
 
 interface ContainerParentProps {
   children: ReactNode | ReactNode[];
   style?: StyleProp<ViewStyle>;
+  loading?: boolean;
 }
 
 const ScreenContainer = ({
   children,
-  style
+  style,
+  loading = false,
 }: ContainerParentProps) => (
   <SafeAreaView style={styles.container}>
     <StatusBar
@@ -26,6 +29,8 @@ const ScreenContainer = ({
     <View style={[styles.contentContainer, style]}>
       {children}
     </View>
+
+    <Loader loading={loading} />
   </SafeAreaView>
 );
 

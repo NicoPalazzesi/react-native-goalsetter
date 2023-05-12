@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-export const useValidatePassword = (password: string) => {
-  const [invalidPassword, setInvalidPassword] = useState<boolean | undefined>();
+export const useValidatePassword = () => {
+  const [invalidPassword, setInvalidPassword] = useState(false);
 
-  const validatePassword = () => {
+  const validatePassword = (password: string) => {
     setInvalidPassword(password !== '' && password.length < 4);
   };
 
