@@ -9,7 +9,7 @@ import {
   ViewStyle
 } from 'react-native';
 import Colors from '../constants/Colors';
-import Loader from './Loader';
+import { Loader } from './';
 
 interface ContainerParentProps {
   children: ReactNode | ReactNode[];

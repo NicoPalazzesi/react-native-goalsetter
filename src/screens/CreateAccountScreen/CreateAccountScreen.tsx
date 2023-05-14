@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import ScreenContainer from '../../components/ScreenContainer';
+import { ScrollView, StyleSheet } from 'react-native';
+import { ScreenContainer, Button } from '../../components';
 import Header from './components/Header';
 import Form from './components/Form';
-import Button from '../../components/Button';
-import { ScrollView, StyleSheet } from 'react-native';
+import TermsOfServiceNote from './components/TermsOfServiceNote';
 import { Account } from './model/interface';
 import { useAddParent } from './hooks/useAddParent';
-import TermsOfServiceNote from './components/TermsOfServiceNote';
 
 const CreateAccountScreen = () => {
   const [account, setAccount] = useState<Account>();

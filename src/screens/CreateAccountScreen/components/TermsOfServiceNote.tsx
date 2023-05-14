@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import Text, { FontFamily } from '../../../components/Text';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { Text } from '../../../components';
+import { FontFamily } from '../../../components/Text/model/enum';
 import FontSize from '../../../constants/FontSize';
 import Colors from '../../../constants/Colors';
 import { hexToRgba } from '../../../utils/ColorConverter';
-import { useNavigation } from '@react-navigation/native';
 import { AppStackParamsList } from '../../../App';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const TermsOfServiceNote = () => {
   const navigation = useNavigation<

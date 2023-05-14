@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
-import Text, { FontFamily } from './Text';
+import {Text } from './';
+import { FontFamily } from './Text/model/enum';
 import FontSize from '../constants/FontSize';
 import Colors from '../constants/Colors';
 import { hexToRgba } from '../utils/ColorConverter';

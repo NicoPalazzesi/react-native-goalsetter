@@ -1,9 +1,9 @@
 import React from 'react';
-import ScreenContainer from '../../components/ScreenContainer';
+import { StyleSheet, View } from 'react-native';
+import { ScreenContainer } from '../../components';
 import Header from './components/Header';
 import Colors from '../../constants/Colors';
 import TermsOfServicesText from './components/TermsOfServicesText';
-import { StyleSheet, View } from 'react-native';
 
 const TermsOfServiceScreen = () => (
   <ScreenContainer statusBarColor={Colors.darkPurple}>

@@ -11,7 +11,8 @@ import {
   TextInputFocusEventData,
 } from 'react-native';
 import Colors from '../constants/Colors';
-import Text, { FontFamily } from './Text';
+import { Text } from './';
+import { FontFamily } from './Text/model/enum';
 import FontSize from '../constants/FontSize';
 
 interface TextInputOwnProps {error?: boolean, iconUri: ImageRequireSource}
