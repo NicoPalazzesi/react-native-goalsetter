@@ -18,7 +18,6 @@ const Header = () => (
       style={styles.imageContainer}
       imageStyle={styles.image}
     >
-      <Text text={'Create Your Account'} style={styles.title} />
       <Text 
         text={'You can be a parent, godparent, grandparent or even a favorite aunt. We’ll add the kids after!'}
         style={styles.subtitle}
@@ -29,7 +28,7 @@ const Header = () => (
 
 const styles = StyleSheet.create({
   container: {
-    height: 150,
+    height: 130,
   },
   imageContainer: {
     resizeMode: 'contain',
@@ -38,12 +37,6 @@ const styles = StyleSheet.create({
   },
   image: {
     opacity: 0.3,
-  },
-  title: {
-    fontSize: FontSize.title,
-    fontFamily: FontFamily.Black,
-    color: Colors.white,
-    textAlign: 'center',
   },
   subtitle: {
     color: Colors.white,
