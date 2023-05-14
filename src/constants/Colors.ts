@@ -4,6 +4,8 @@ const Colors = {
   darkBlue: '#00B7D5',
   red: '#FF0000',
   green: '#5FBA20',
+  purple: '#8D24C4',
+  darkPurple: '#500F71',
   black: '#000000',
   white: '#FFFFFF',
   lightGray: '#D2D2D2',
