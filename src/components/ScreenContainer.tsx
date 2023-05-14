@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import {
+  ColorValue,
   SafeAreaView,
   StatusBar,
   StyleProp,
@@ -8,22 +9,24 @@ import {
   ViewStyle
 } from 'react-native';
 import Colors from '../constants/Colors';
-import Loader from '../screens/CreateAccountScreen/components/Loader';
+import Loader from './Loader';
 
 interface ContainerParentProps {
   children: ReactNode | ReactNode[];
   style?: StyleProp<ViewStyle>;
+  statusBarColor?: ColorValue;
   loading?: boolean;
 }
 
 const ScreenContainer = ({
   children,
   style,
+  statusBarColor = Colors.blue,
   loading = false,
 }: ContainerParentProps) => (
   <SafeAreaView style={styles.container}>
     <StatusBar
-      backgroundColor={Colors.blue}
+      backgroundColor={statusBarColor}
       barStyle={'light-content'}
     />
     <View style={[styles.contentContainer, style]}>
@@ -37,6 +40,7 @@ const ScreenContainer = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.white,
   },
   contentContainer: {
     flex: 1,

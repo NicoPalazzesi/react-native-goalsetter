@@ -1,7 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, StyleSheet } from 'react-native';
-import Colors from '../../../constants/Colors';
-import { hexToRgba } from '../../../utils/ColorConverter';
+import Colors from '../constants/Colors';
+import { hexToRgba } from '../utils/ColorConverter';
 
 interface LoaderProps {
   loading: boolean
