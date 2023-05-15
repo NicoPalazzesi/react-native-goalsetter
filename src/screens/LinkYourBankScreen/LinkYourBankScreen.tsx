@@ -1,6 +1,12 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
-import { BlueHeader, Button, ScreenContainer, Text } from '../../components';
+import { StyleSheet, View } from 'react-native';
+import {
+  BlueHeader,
+  Button,
+  ScreenContainer,
+  SvgImage,
+  Text
+} from '../../components';
 import FontSize from '../../constants/FontSize';
 import { FontFamily } from '../../components/Text/model/enum';
 import Colors from '../../constants/Colors';
@@ -10,10 +16,7 @@ const LinkYourBankScreen = () => (
     <BlueHeader />
     <View style={styles.ContentContainer}>
       <View>
-        <Image
-          source={require('../../assets/images/family-banking.png')}
-          style={styles.image}
-        />
+        <SvgImage name={'family-banking'} style={styles.image} />
         <Text text={'Family banking'} style={styles.title} />
         <Text
           text={'Linking your bank lets you use all of Goalsetter’s amazing features. Every member of your family can save, gift, learn, earn, and spend money... smartly.'}
