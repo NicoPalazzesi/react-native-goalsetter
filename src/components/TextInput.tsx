@@ -4,22 +4,21 @@ import {
   TextInput as RNTextInput,
   StyleSheet,
   TextInputProps as RNTextInputProps,
-  Image,
   View,
-  ImageRequireSource,
   NativeSyntheticEvent,
   TextInputFocusEventData,
 } from 'react-native';
 import Colors from '../constants/Colors';
-import { Text } from './';
+import { Text, SvgImage } from './';
 import { FontFamily } from './Text/model/enum';
 import FontSize from '../constants/FontSize';
+import { SvgImageName } from './SvgImage';
 
-interface TextInputOwnProps {error?: boolean, iconUri: ImageRequireSource}
+interface TextInputOwnProps {error?: boolean, iconName: SvgImageName}
 type TextInputProps = RNTextInputProps & TextInputOwnProps
 
 const TextInput = (props: TextInputProps) => {
-  const {value, placeholder, style, error, iconUri} = props;
+  const {value, placeholder, style, error, iconName} = props;
   const [focus, setFocus] = useState(false);
 
   const onFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
@@ -51,8 +50,8 @@ const TextInput = (props: TextInputProps) => {
 
   return (
     <View style={[styles.container, style, dynamicStyles.container]}>
-      <Image
-        source={iconUri}
+      <SvgImage
+        name={iconName}
         style={styles.icon}
       />
       <View style={styles.textInputContainer}>

@@ -43,7 +43,7 @@ const Form = ({onFieldsChange}: FormProps) => {
         value={firstname}
         onChangeText={(value) => setFirstname(value)}
         autoCapitalize={'words'}
-        iconUri={require('../../../assets/images/account-circle-icon.png')}
+        iconName={'account-circle-icon'}
         style={styles.textInput}
       />
       <TextInput
@@ -51,14 +51,14 @@ const Form = ({onFieldsChange}: FormProps) => {
         value={lastname}
         onChangeText={(value) => setLastname(value)}
         autoCapitalize={'words'}
-        iconUri={require('../../../assets/images/account-circle-icon.png')}
+        iconName={'account-circle-icon'}
         style={styles.textInput}
       />
       <TextInput
         placeholder={'Email Address'}
         value={email}
         onChangeText={onChangeEmail}
-        iconUri={require('../../../assets/images/email-icon.png')}
+        iconName={'email-icon'}
         keyboardType={'email-address'}
         error={invalidEmail}
         style={styles.textInput}
@@ -67,7 +67,7 @@ const Form = ({onFieldsChange}: FormProps) => {
         placeholder={'Password'}
         value={password}
         onChangeText={onChangePassword}
-        iconUri={require('../../../assets/images/unlocked-icon.png')}
+        iconName={'unlocked-icon'}
         secureTextEntry={true}
         error={invalidPassword}
         style={styles.textInput}
