@@ -1,9 +1,8 @@
 import React from 'react';
 import { ImageBackground, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import Text, { FontFamily } from '../../../components/Text';
+import { Text } from '../../../components';
 import Colors from '../../../constants/Colors';
-import FontSize from '../../../constants/FontSize';
 
 const Header = () => (
   <LinearGradient

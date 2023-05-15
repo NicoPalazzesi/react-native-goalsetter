@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import ScreenContainer from '../../components/ScreenContainer';
-import Header from './components/Header';
-import Form from './components/Form';
-import Button from '../../components/Button';
 import { ScrollView, StyleSheet } from 'react-native';
+import { ScreenContainer, Button, BlueHeader } from '../../components';
+import Form from './components/Form';
+import TermsOfServiceNote from './components/TermsOfServiceNote';
 import { Account } from './model/interface';
 import { useAddParent } from './hooks/useAddParent';
-import TermsOfServiceNote from './components/TermsOfServiceNote';
 
 const CreateAccountScreen = () => {
   const [account, setAccount] = useState<Account>();
@@ -21,7 +19,9 @@ const CreateAccountScreen = () => {
 
   return (
     <ScreenContainer loading={loading}>
-      <Header />
+      <BlueHeader
+        subtitle={'You can be a parent, godparent, grandparent or even a favorite aunt. We’ll add the kids after!'}
+      />
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.contentContainer}

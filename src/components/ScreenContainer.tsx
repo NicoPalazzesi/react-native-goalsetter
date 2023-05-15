@@ -9,7 +9,7 @@ import {
   ViewStyle
 } from 'react-native';
 import Colors from '../constants/Colors';
-import Loader from './Loader';
+import { Loader } from './';
 
 interface ContainerParentProps {
   children: ReactNode | ReactNode[];
@@ -40,7 +40,6 @@ const ScreenContainer = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.white,
   },
   contentContainer: {
     flex: 1,

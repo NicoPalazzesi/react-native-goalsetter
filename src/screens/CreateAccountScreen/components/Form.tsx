@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
-import TextInput from '../../../components/TextInput';
+import { TextInput } from '../../../components';
 import { useValidateEmail } from '../hooks/useValidateEmail';
 import { useValidatePassword } from '../hooks/useValidatePassword';
 import { Account } from '../model/interface';
