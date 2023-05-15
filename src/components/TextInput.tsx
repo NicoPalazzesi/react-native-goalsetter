@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { Ref, forwardRef, useState } from 'react';
 import {
-  Keyboard,
   TextInput as RNTextInput,
   StyleSheet,
   TextInputProps as RNTextInputProps,
@@ -17,7 +16,7 @@ import { SvgImageName } from './SvgImage';
 interface TextInputOwnProps {error?: boolean, iconName: SvgImageName}
 type TextInputProps = RNTextInputProps & TextInputOwnProps
 
-const TextInput = (props: TextInputProps) => {
+const TextInput = (props: TextInputProps, ref?: Ref<RNTextInput>) => {
   const {value, placeholder, style, error, iconName} = props;
   const [focus, setFocus] = useState(false);
 
@@ -30,14 +29,6 @@ const TextInput = (props: TextInputProps) => {
     setFocus(false);
     props.onBlur && props.onBlur(e);
   };
-
-  useEffect(() => {
-    const hideSubscription = Keyboard.addListener('keyboardDidHide', () => {
-      setFocus(false);
-    });
-
-    return hideSubscription.remove;
-  }, []);
 
   const dynamicStyles = StyleSheet.create({
     container: {
@@ -58,6 +49,7 @@ const TextInput = (props: TextInputProps) => {
         {value !== '' && <Text text={placeholder} style={styles.placeholder} />}
         <RNTextInput
         {...props}
+        ref={ref}
         onFocus={onFocus}
         onBlur={onBlur}
         placeholderTextColor={Colors.extraLightGray}
@@ -94,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TextInput;
+export default forwardRef(TextInput);

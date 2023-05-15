@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { RefObject, useEffect, useRef, useState } from 'react';
+import { View, StyleSheet, TextInput as RNTextInput } from 'react-native';
 import { TextInput } from '../../../components';
 import { useValidateEmail } from '../hooks/useValidateEmail';
 import { useValidatePassword } from '../hooks/useValidatePassword';
@@ -14,6 +14,10 @@ const Form = ({onFieldsChange}: FormProps) => {
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
+  const lastNameRef = useRef() as RefObject<RNTextInput>;
+  const emailRef = useRef() as RefObject<RNTextInput>;
+  const passwordRef = useRef() as RefObject<RNTextInput>;
 
   const {invalidEmail, validateEmail} = useValidateEmail();
   const {invalidPassword, validatePassword} = useValidatePassword();
@@ -31,8 +35,8 @@ const Form = ({onFieldsChange}: FormProps) => {
   useEffect(() => {
     const completed = firstname !== '' &&
     lastname !== '' &&
-    !invalidEmail &&
-    !invalidPassword;
+    invalidEmail === false &&
+    invalidPassword === false;
     onFieldsChange(completed, {firstname, lastname, email, password});
   }, [firstname, lastname, invalidEmail, invalidPassword]);
 
@@ -42,28 +46,37 @@ const Form = ({onFieldsChange}: FormProps) => {
         placeholder={'First Name'}
         value={firstname}
         onChangeText={(value) => setFirstname(value)}
+        returnKeyType={'next'}
         autoCapitalize={'words'}
         iconName={'account-circle-icon'}
+        onSubmitEditing={() => {lastNameRef.current?.focus()}}
         style={styles.textInput}
       />
       <TextInput
+        ref={lastNameRef}
         placeholder={'Last Name'}
         value={lastname}
         onChangeText={(value) => setLastname(value)}
+        returnKeyType={'next'}
         autoCapitalize={'words'}
         iconName={'account-circle-icon'}
+        onSubmitEditing={() => {emailRef.current?.focus()}}
         style={styles.textInput}
       />
       <TextInput
+        ref={emailRef}
         placeholder={'Email Address'}
         value={email}
         onChangeText={onChangeEmail}
-        iconName={'email-icon'}
+        returnKeyType={'next'}
         keyboardType={'email-address'}
+        iconName={'email-icon'}
+        onSubmitEditing={() => {passwordRef.current?.focus()}}
         error={invalidEmail}
         style={styles.textInput}
       />
       <TextInput
+        ref={passwordRef}
         placeholder={'Password'}
         value={password}
         onChangeText={onChangePassword}
