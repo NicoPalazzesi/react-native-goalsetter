@@ -1,15 +1,15 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 import {
   ColorValue,
-  SafeAreaView,
   StatusBar,
   StyleProp,
   StyleSheet,
   View,
-  ViewStyle
+  ViewStyle,
 } from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Colors from '../constants/Colors';
-import { Loader } from './';
+import {Loader} from './';
 
 interface ContainerParentProps {
   children: ReactNode | ReactNode[];
@@ -23,19 +23,31 @@ const ScreenContainer = ({
   style,
   statusBarColor = Colors.blue,
   loading = false,
-}: ContainerParentProps) => (
-  <SafeAreaView style={styles.container}>
-    <StatusBar
-      backgroundColor={statusBarColor}
-      barStyle={'light-content'}
-    />
-    <View style={[styles.contentContainer, style]}>
-      {children}
-    </View>
+}: ContainerParentProps) => {
+  const {bottom} = useSafeAreaInsets();
 
-    <Loader loading={loading} />
-  </SafeAreaView>
-);
+  const dynamicStyles = StyleSheet.create({
+    contentContainer: {
+      paddingBottom: bottom,
+    },
+  });
+
+  return (
+    <View style={styles.container}>
+      <StatusBar backgroundColor={statusBarColor} barStyle={'light-content'} />
+      <View
+        style={[
+          styles.contentContainer,
+          dynamicStyles.contentContainer,
+          style,
+        ]}>
+        {children}
+      </View>
+
+      <Loader loading={loading} />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
