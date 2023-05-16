@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* goalsetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* goalsetterTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-goalsetter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-goalsetter.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-goalsetter-goalsetterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-goalsetter-goalsetterTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AE8E04DE3A1B4847B9ECCAEA /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */; };
+		4336DF7CAC604AFDA5A343F2 /* AvenirLTStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */; };
 		45389B6EF9E045E597C24D8F /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72A95AEBAC6B495DA26BD0DF /* AvenirLTStd-Book.otf */; };
 		556713476F3642D1A020D1E8 /* AvenirLTStd-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C6431D6ED134F3E9747E873 /* AvenirLTStd-Heavy.otf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		865F62CEE3494750BB3C1EAF /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 878AB278C4AA48448F2D372B /* AvenirLTStd-Light.otf */; };
-		4336DF7CAC604AFDA5A343F2 /* AvenirLTStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */; };
+		9A318AE16E4271DD22356C81 /* libPods-goalsetter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD36E41653289458F451AFF /* libPods-goalsetter.a */; };
+		AE8E04DE3A1B4847B9ECCAEA /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */; };
+		C348DA36A516F6E480B7E8A9 /* libPods-goalsetter-goalsetterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E500D9AEB466AE0A5413FC7 /* libPods-goalsetter-goalsetterTests.a */; };
 		DF4A5A361B14417BA4581564 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4456A6C3E37545ADAE9C595D /* AvenirLTStd-Roman.otf */; };
 /* End PBXBuildFile section */
 
@@ -36,26 +36,26 @@
 		00E356EE1AD99517003FC87E /* goalsetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goalsetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* goalsetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goalsetterTests.m; sourceTree = "<group>"; };
+		0A2C54A70C3C6FEDE529CD8D /* Pods-goalsetter-goalsetterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter-goalsetterTests.release.xcconfig"; path = "Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* goalsetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goalsetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = goalsetter/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = goalsetter/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = goalsetter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = goalsetter/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = goalsetter/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-goalsetter-goalsetterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goalsetter-goalsetterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-goalsetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter.debug.xcconfig"; path = "Target Support Files/Pods-goalsetter/Pods-goalsetter.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-goalsetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter.release.xcconfig"; path = "Target Support Files/Pods-goalsetter/Pods-goalsetter.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter-goalsetterTests.debug.xcconfig"; path = "Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-goalsetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goalsetter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6431D6ED134F3E9747E873 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Heavy.otf"; path = "../src/assets/fonts/AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; };
+		4456A6C3E37545ADAE9C595D /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Roman.otf"; path = "../src/assets/fonts/AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		4AD36E41653289458F451AFF /* libPods-goalsetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goalsetter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Medium.otf"; path = "../src/assets/fonts/AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
+		72A95AEBAC6B495DA26BD0DF /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Book.otf"; path = "../src/assets/fonts/AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Black.otf"; path = "../src/assets/fonts/AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
+		7E500D9AEB466AE0A5413FC7 /* libPods-goalsetter-goalsetterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goalsetter-goalsetterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = goalsetter/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-goalsetter-goalsetterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter-goalsetterTests.release.xcconfig"; path = "Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests.release.xcconfig"; sourceTree = "<group>"; };
+		878AB278C4AA48448F2D372B /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Light.otf"; path = "../src/assets/fonts/AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		96A1CED5F8BDEEA648A93AEE /* Pods-goalsetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter.debug.xcconfig"; path = "Target Support Files/Pods-goalsetter/Pods-goalsetter.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C339F0B0E19A60CB54F113 /* Pods-goalsetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter.release.xcconfig"; path = "Target Support Files/Pods-goalsetter/Pods-goalsetter.release.xcconfig"; sourceTree = "<group>"; };
+		B4B39CCC87C9EFA9E63052F0 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goalsetter-goalsetterTests.debug.xcconfig"; path = "Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Black.otf"; path = "../src/assets/fonts/AvenirLTStd-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		72A95AEBAC6B495DA26BD0DF /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Book.otf"; path = "../src/assets/fonts/AvenirLTStd-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3C6431D6ED134F3E9747E873 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Heavy.otf"; path = "../src/assets/fonts/AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		878AB278C4AA48448F2D372B /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Light.otf"; path = "../src/assets/fonts/AvenirLTStd-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Medium.otf"; path = "../src/assets/fonts/AvenirLTStd-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4456A6C3E37545ADAE9C595D /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Roman.otf"; path = "../src/assets/fonts/AvenirLTStd-Roman.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-goalsetter-goalsetterTests.a in Frameworks */,
+				C348DA36A516F6E480B7E8A9 /* libPods-goalsetter-goalsetterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-goalsetter.a in Frameworks */,
+				9A318AE16E4271DD22356C81 /* libPods-goalsetter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +112,24 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-goalsetter.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-goalsetter-goalsetterTests.a */,
+				4AD36E41653289458F451AFF /* libPods-goalsetter.a */,
+				7E500D9AEB466AE0A5413FC7 /* libPods-goalsetter-goalsetterTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453E086A3D294B3CB683BB09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */,
+				72A95AEBAC6B495DA26BD0DF /* AvenirLTStd-Book.otf */,
+				3C6431D6ED134F3E9747E873 /* AvenirLTStd-Heavy.otf */,
+				878AB278C4AA48448F2D372B /* AvenirLTStd-Light.otf */,
+				6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */,
+				4456A6C3E37545ADAE9C595D /* AvenirLTStd-Roman.otf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -153,33 +167,13 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-goalsetter.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-goalsetter.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-goalsetter-goalsetterTests.release.xcconfig */,
+				96A1CED5F8BDEEA648A93AEE /* Pods-goalsetter.debug.xcconfig */,
+				A7C339F0B0E19A60CB54F113 /* Pods-goalsetter.release.xcconfig */,
+				B4B39CCC87C9EFA9E63052F0 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */,
+				0A2C54A70C3C6FEDE529CD8D /* Pods-goalsetter-goalsetterTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		453E086A3D294B3CB683BB09 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				F88CD58D9A87457C858CBA17 /* Avenir-LT-Std-35-Light.otf */,
-				F68A37D8842C438DBD32B17E /* Avenir-LT-Std-45-Book.otf */,
-				C21C73F05305499AB62F1E54 /* Avenir-LT-Std-55-Roman.otf */,
-				3543C18B510F4946B5276711 /* Avenir-LT-Std-65-Medium.otf */,
-				3339143282F74872BDE3A403 /* Avenir-LT-Std-85-Heavy.otf */,
-				850C2221FB5149A284A8A964 /* Avenir-LT-Std-95-Black.otf */,
-				74C4D9B419104E069AEC4199 /* AvenirLTStd-Black.otf */,
-				72A95AEBAC6B495DA26BD0DF /* AvenirLTStd-Book.otf */,
-				3C6431D6ED134F3E9747E873 /* AvenirLTStd-Heavy.otf */,
-				878AB278C4AA48448F2D372B /* AvenirLTStd-Light.otf */,
-				6B79071826B048C6913E84AA /* AvenirLTStd-Medium.otf */,
-				4456A6C3E37545ADAE9C595D /* AvenirLTStd-Roman.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -188,12 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "goalsetterTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				9F4D5022E5A13D25DC1F41B6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				DDFC83DB33768B57252BE5A3 /* [CP] Embed Pods Frameworks */,
+				B175CEDA91E5E6B29CEB819B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,14 +203,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "goalsetter" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				D8F353777B4304FFAB318F3E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				7CD8CA98D1A54D9B288CCED2 /* [CP] Embed Pods Frameworks */,
+				D0C1238D7636B98CF211A424 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,12 +271,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				428C8E468D6A4C1391CEB877 /* Avenir-LT-Std-35-Light.otf in Resources */,
-				95ECDFDD7ECE4592A80FC69E /* Avenir-LT-Std-45-Book.otf in Resources */,
-				650245F89C2F420DB2C70152 /* Avenir-LT-Std-55-Roman.otf in Resources */,
-				5AA89E61FA1A4F94840C6A71 /* Avenir-LT-Std-65-Medium.otf in Resources */,
-				5AF22BC13402481396ACEF19 /* Avenir-LT-Std-85-Heavy.otf in Resources */,
-				DD767E658C4F4E57A4C29FE2 /* Avenir-LT-Std-95-Black.otf in Resources */,
 				AE8E04DE3A1B4847B9ECCAEA /* AvenirLTStd-Black.otf in Resources */,
 				45389B6EF9E045E597C24D8F /* AvenirLTStd-Book.otf in Resources */,
 				556713476F3642D1A020D1E8 /* AvenirLTStd-Heavy.otf in Resources */,
@@ -311,7 +299,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		7CD8CA98D1A54D9B288CCED2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +316,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		9F4D5022E5A13D25DC1F41B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +338,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		B175CEDA91E5E6B29CEB819B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C1238D7636B98CF211A424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F353777B4304FFAB318F3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +394,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		DDFC83DB33768B57252BE5A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,40 +409,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter/Pods-goalsetter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-goalsetter-goalsetterTests/Pods-goalsetter-goalsetterTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -475,7 +463,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */;
+			baseConfigurationReference = B4B39CCC87C9EFA9E63052F0 /* Pods-goalsetter-goalsetterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -502,7 +490,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-goalsetter-goalsetterTests.release.xcconfig */;
+			baseConfigurationReference = 0A2C54A70C3C6FEDE529CD8D /* Pods-goalsetter-goalsetterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -526,7 +514,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-goalsetter.debug.xcconfig */;
+			baseConfigurationReference = 96A1CED5F8BDEEA648A93AEE /* Pods-goalsetter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -553,7 +541,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-goalsetter.release.xcconfig */;
+			baseConfigurationReference = A7C339F0B0E19A60CB54F113 /* Pods-goalsetter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -609,7 +597,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -643,6 +631,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -680,7 +669,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -706,6 +695,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

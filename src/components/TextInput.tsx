@@ -1,4 +1,4 @@
-import React, { Ref, forwardRef, useState } from 'react';
+import React, {Ref, forwardRef, useState} from 'react';
 import {
   TextInput as RNTextInput,
   StyleSheet,
@@ -6,15 +6,19 @@ import {
   View,
   NativeSyntheticEvent,
   TextInputFocusEventData,
+  Platform,
 } from 'react-native';
 import Colors from '../constants/Colors';
-import { Text, SvgImage } from './';
-import { FontFamily } from './Text/model/enum';
+import {Text, SvgImage} from './';
+import {FontFamily} from './Text/model/enum';
 import FontSize from '../constants/FontSize';
-import { SvgImageName } from './SvgImage';
+import {SvgImageName} from './SvgImage';
 
-interface TextInputOwnProps {error?: boolean, iconName: SvgImageName}
-type TextInputProps = RNTextInputProps & TextInputOwnProps
+interface TextInputOwnProps {
+  error?: boolean;
+  iconName: SvgImageName;
+}
+type TextInputProps = RNTextInputProps & TextInputOwnProps;
 
 const TextInput = (props: TextInputProps, ref?: Ref<RNTextInput>) => {
   const {value, placeholder, style, error, iconName} = props;
@@ -32,29 +36,31 @@ const TextInput = (props: TextInputProps, ref?: Ref<RNTextInput>) => {
 
   const dynamicStyles = StyleSheet.create({
     container: {
-      borderBottomColor: focus ? Colors.darkBlue : error ? Colors.red : Colors.lightGray,
+      borderBottomColor: focus
+        ? Colors.darkBlue
+        : error
+        ? Colors.red
+        : Colors.lightGray,
     },
-    textInput: {
-      marginBottom: value !== '' ? -12 : 0,
+    textInputContainer: {
+      marginBottom: Platform.OS === 'ios' ? -4 : value !== '' ? -12 : 0,
     },
   });
 
   return (
     <View style={[styles.container, style, dynamicStyles.container]}>
-      <SvgImage
-        name={iconName}
-        style={styles.icon}
-      />
-      <View style={styles.textInputContainer}>
+      <SvgImage name={iconName} style={styles.icon} />
+      <View
+        style={[styles.textInputContainer, dynamicStyles.textInputContainer]}>
         {value !== '' && <Text text={placeholder} style={styles.placeholder} />}
         <RNTextInput
-        {...props}
-        ref={ref}
-        onFocus={onFocus}
-        onBlur={onBlur}
-        placeholderTextColor={Colors.extraLightGray}
-        style={[styles.textInput, dynamicStyles.textInput]}
-      />
+          {...props}
+          ref={ref}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          placeholderTextColor={Colors.extraLightGray}
+          style={styles.textInput}
+        />
       </View>
     </View>
   );
@@ -62,7 +68,7 @@ const TextInput = (props: TextInputProps, ref?: Ref<RNTextInput>) => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection:'row',
+    flexDirection: 'row',
     borderBottomWidth: 0.5,
     alignItems: 'center',
     height: 53,
@@ -74,7 +80,7 @@ const styles = StyleSheet.create({
     color: Colors.extraLightGray,
     fontSize: FontSize.placeholder,
     fontFamily: FontFamily.Black,
-    marginBottom: -8,
+    marginBottom: Platform.OS === 'ios' ? 8 : -8,
   },
   textInputContainer: {
     width: '100%',
@@ -82,7 +88,7 @@ const styles = StyleSheet.create({
   textInput: {
     fontFamily: FontFamily.Black,
     color: Colors.blue,
-    marginLeft: -4,
+    marginLeft: Platform.OS === 'ios' ? 0 : -4,
   },
 });
 

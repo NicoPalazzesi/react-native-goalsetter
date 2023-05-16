@@ -1,34 +1,44 @@
 import React from 'react';
-import { ImageBackground, StyleSheet } from 'react-native';
+import {ImageBackground, StyleSheet} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { Text } from './';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {Text} from './';
 import Colors from '../constants/Colors';
+import {useHeaderHeight} from '@react-navigation/elements';
 
 interface BlueHeaderProps {
   subtitle?: string;
 }
 
 const BlueHeader = ({subtitle}: BlueHeaderProps) => {
+  const {top} = useSafeAreaInsets();
+  const headerHeight = useHeaderHeight();
+
   const dynamicStyles = StyleSheet.create({
     container: {
-      height: subtitle ? 130 : undefined,
-    }
+      minHeight: subtitle ? 122 + top : headerHeight + 8,
+    },
+    subtitle: {marginTop: 30 + top},
   });
 
   return (
     <LinearGradient
       colors={[Colors.lightBlue, Colors.darkBlue]}
-      start={{x: 0, y: 0}} end={{x: 1, y: 0}}
+      start={{x: 0, y: 0}}
+      end={{x: 1, y: 0}}
       useAngle={true}
       angle={90}
-      style={[styles.container, dynamicStyles.container]}
-    >
+      style={[styles.container, dynamicStyles.container]}>
       <ImageBackground
         source={require('../assets/images/header-pattern.png')}
         style={styles.imageContainer}
-        imageStyle={styles.image}
-      >
-        {subtitle && <Text text={subtitle} style={styles.subtitle} />}
+        imageStyle={styles.image}>
+        {subtitle && (
+          <Text
+            text={subtitle}
+            style={[styles.subtitle, dynamicStyles.subtitle]}
+          />
+        )}
       </ImageBackground>
     </LinearGradient>
   );
@@ -36,7 +46,7 @@ const BlueHeader = ({subtitle}: BlueHeaderProps) => {
 
 const styles = StyleSheet.create({
   container: {
-    maxHeight: 150,
+    maxHeight: 176,
   },
   imageContainer: {
     paddingHorizontal: 16,
@@ -44,13 +54,12 @@ const styles = StyleSheet.create({
   },
   image: {
     opacity: 0.3,
-    height: 150,
+    height: 176,
   },
   subtitle: {
     color: Colors.white,
     textAlign: 'center',
-    marginTop: 32,
-  }
+  },
 });
 
 export default BlueHeader;
