@@ -6,6 +6,8 @@
 * [npm](https://www.npmjs.com/)
 * [yarn](https://yarnpkg.com/)
 * [Android Studio](https://developer.android.com/studio)
+* [xCode](https://developer.apple.com/xcode/)
+* [CocoaPods](https://cocoapods.org/)
 
 ## Instalación
 
@@ -20,18 +22,26 @@ cd react-native-goalsetter
 Ejecutar en una terminal
 ``` bash
 yarn install
-```
-
-### Android
-Abrir un simulador de Android. Puede usar el de Android Studio, Genymotion o 
-cualquiera de su preferencia.
-
-Ejecutar en una terminal
-``` bash
 yarn start
 ```
 
-A su vez, en otra terminal, ejecutar el comando:
+### Android
+Abrir simulador de Android de su preferencia o dejar que React Native elija uno por defecto.
+Puede usar emuladores de Android Studio, Genymotion o cualquiera de su preferencia.
+
+
+Ejecutar el comando:
 ``` bash
 yarn android
+```
+
+### iOS
+Abrir simulador de iOS de su preferencia o dejar que React Native elija uno por defecto.
+
+
+Ejecutar los comandos:
+``` bash
+cd ios/ && pod install
+cd ../
+yarn ios
 ```
