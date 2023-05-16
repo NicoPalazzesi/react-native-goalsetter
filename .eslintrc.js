@@ -10,5 +10,11 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
       },
     },
+    {
+      files: ['*.js'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
   ],
 };
