@@ -1,19 +1,23 @@
 import React from 'react';
-import { StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
-import {Text } from './';
-import { FontFamily } from './Text/model/enum';
+import {
+  StyleSheet,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
+import {Text} from './';
+import {FontFamily} from './Text/model/enum';
 import FontSize from '../constants/FontSize';
 import Colors from '../constants/Colors';
-import { hexToRgba } from '../utils/ColorConverter';
+import {hexToRgba} from '../utils/ColorConverter';
 
-interface ButtonProps {
+interface ButtonOwnProps {
   label: string;
-  onPress: () => void;
-  disabled?: boolean;
-  style?: StyleProp<ViewStyle>
 }
+type ButtonProps = TouchableOpacityProps & ButtonOwnProps;
 
-const Button = ({label, onPress, disabled, style}: ButtonProps) => {
+const Button = ({label, ...props}: ButtonProps) => {
+  const {disabled, style} = props;
+
   const dynamicStyles = StyleSheet.create({
     container: {
       backgroundColor: hexToRgba(Colors.green, disabled ? 0.5 : 1),
@@ -22,10 +26,8 @@ const Button = ({label, onPress, disabled, style}: ButtonProps) => {
 
   return (
     <TouchableOpacity
-      onPress={onPress}
-      disabled={disabled}
-      style={[styles.container, style, dynamicStyles.container]}
-    >
+      {...props}
+      style={[styles.container, style, dynamicStyles.container]}>
       <Text text={label} style={styles.label} />
     </TouchableOpacity>
   );
@@ -42,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: FontSize.button,
     fontFamily: FontFamily.Heavy,
     color: Colors.white,
-  }
+  },
 });
 
 export default Button;
